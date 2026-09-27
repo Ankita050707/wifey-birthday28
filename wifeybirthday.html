@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Wifeyyy 💗</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background:
+        radial-gradient(circle at 20% 20%, #ffd6e7 0, transparent 30%),
+        radial-gradient(circle at 80% 10%, #e5d5ff 0, transparent 30%),
+        linear-gradient(135deg, #fff0f6, #eee5ff);
+    color: #4a3040;
+    overflow-x: hidden;
+}
+
+.screen {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 15px;
+}
+
+.card {
+    width: min(650px, 94vw);
+    background: rgba(255,255,255,0.82);
+    backdrop-filter: blur(12px);
+    border-radius: 30px;
+    padding: 30px 22px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(120,70,120,.18);
+    border: 2px solid rgba(255,255,255,.8);
+}
+
+h1 {
+    font-size: clamp(28px, 7vw, 48px);
+    margin: 5px 0 10px;
+    color: #d84f8b;
+}
+
+h2 {
+    color: #b83f76;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* ---------- CAT ---------- */
+
+.cat-area {
+    height: 250px;
+    position: relative;
+    margin: 5px auto;
+}
+
+.cat {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 135px;
+    background: #ffc49d;
+    border-radius: 48% 48% 43% 43%;
+    box-shadow: inset -8px -8px 0 rgba(200,120,80,.12);
+}
+
+.ear {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background: #ffc49d;
+    top: -25px;
+    transform: rotate(45deg);
+    border-radius: 10px 45px 10px 45px;
+}
+
+.ear.left {
+    left: 5px;
+}
+
+.ear.right {
+    right: 5px;
+}
+
+.inner-ear {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #f39bb6;
+    border-radius: 10px 25px 10px 25px;
+    top: 8px;
+    left: 8px;
+}
+
+.eye {
+    position: absolute;
+    width: 13px;
+    height: 18px;
+    background: #3b2730;
+    border-radius: 50%;
+    top: 48px;
+}
+
+.eye.left {
+    left: 40px;
+}
+
+.eye.right {
+    right: 40px;
+}
+
+.eye::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 5px;
+    background: white;
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+}
+
+.nose {
+    position: absolute;
+    top: 70px;
+    left: 68px;
+    width: 14px;
+    height: 10px;
+    background: #e77994;
+    border-radius: 50%;
+}
+
+.mouth {
+    position: absolute;
+    top: 80px;
+    left: 64px;
+    width: 22px;
+    height: 13px;
+    border-bottom: 3px solid #633c4b;
+    border-radius: 50%;
+}
+
+.whisker {
+    position: absolute;
+    width: 38px;
+    height: 2px;
+    background: #9b6d70;
+    top: 78px;
+}
+
+.w1 {
+    left: 3px;
+    transform: rotate(10deg);
+}
+
+.w2 {
+    left: 3px;
+    top: 88px;
+    transform: rotate(-8deg);
+}
+
+.w3 {
+    right: 3px;
+    transform: rotate(-10deg);
+}
+
+.w4 {
+    right: 3px;
+    top: 88px;
+    transform: rotate(8deg);
+}
+
+/* ---------- CAKE ---------- */
+
+.cake {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -3px;
+    width: 190px;
+    height: 95px;
+}
+
+.cake-base {
+    position: absolute;
+    bottom: 0;
+    width: 190px;
+    height: 65px;
+    background: linear-gradient(#ff91b5, #ed6595);
+    border-radius: 12px 12px 20px 20px;
+    box-shadow: 0 8px 0 #d64f82;
+}
+
+.icing {
+    position: absolute;
+    top: 5px;
+    width: 190px;
+    height: 30px;
+    background: #fff5fa;
+    border-radius: 18px;
+}
+
+.drip {
+    position: absolute;
+    width: 18px;
+    height: 25px;
+    background: #fff5fa;
+    border-radius: 0 0 15px 15px;
+}
+
+.drip:nth-child(1) { left: 25px; }
+.drip:nth-child(2) { left: 75px; height: 32px; }
+.drip:nth-child(3) { right: 25px; height: 22px; }
+
+.candle {
+    position: absolute;
+    bottom: 62px;
+    width: 9px;
+    height: 42px;
+    background: repeating-linear-gradient(
+        45deg,
+        #79b8ff 0,
+        #79b8ff 5px,
+        #ffffff 5px,
+        #ffffff 9px
+    );
+    border-radius: 5px;
+    z-index: 5;
+}
+
+.candle:nth-of-type(1) { left: 28px; }
+.candle:nth-of-type(2) { left: 52px; }
+.candle:nth-of-type(3) { left: 76px; }
+.candle:nth-of-type(4) { left: 100px; }
+.candle:nth-of-type(5) { left: 124px; }
+.candle:nth-of-type(6) { left: 148px; }
+
+.flame {
+    position: absolute;
+    width: 13px;
+    height: 20px;
+    background: #ff9d32;
+    border-radius: 50% 50% 50% 50%;
+    top: -20px;
+    left: -2px;
+    box-shadow: 0 0 15px #ffb84d;
+    animation: flicker .4s infinite alternate;
+}
+
+@keyframes flicker {
+    from { transform: scale(1) rotate(-3deg); }
+    to { transform: scale(1.12) rotate(3deg); }
+}
+
+/* ---------- BUTTONS ---------- */
+
+button {
+    border: none;
+    border-radius: 999px;
+    padding: 14px 22px;
+    margin: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ed6fa4, #b979e8);
+    color: white;
+    box-shadow: 0 8px 20px rgba(190,90,150,.25);
+    transition: .2s;
+}
+
+button:hover {
+    transform: translateY(-2px) scale(1.03);
+}
+
+button:active {
+    transform: scale(.97);
+}
+
+.secondary {
+    background: white;
+    color: #bd5484;
+    border: 2px solid #e7a0bf;
+}
+
+/* ---------- MESSAGE ---------- */
+
+#message {
+    display: none;
+}
+
+.message-box {
+    background: #fff6fb;
+    border-radius: 22px;
+    padding: 20px;
+    text-align: left;
+    border: 2px dashed #e5a1c0;
+}
+
+.message-box p {
+    margin: 12px 0;
+}
+
+.highlight {
+    color: #d64c88;
+    font-weight: bold;
+}
+
+.big-love {
+    font-size: 28px;
+    text-align: center;
+    color: #d64c88;
+}
+
+/* ---------- PHOTOS ---------- */
+
+.photo-section {
+    margin-top: 25px;
+}
+
+.photo-placeholder {
+    border: 2px dashed #e0a4bf;
+    border-radius: 20px;
+    padding: 25px;
+    color: #a96786;
+    background: #fff9fc;
+}
+
+/* ---------- PHOTO GALLERY ---------- */
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 4px solid white;
+    box-shadow: 0 5px 15px rgba(180, 90, 140, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.photo-grid img:hover {
+    transform: rotate(-2deg) scale(1.03);
+}
+
+@media (max-width: 450px) {
+
+    .photo-grid img {
+        height: 135px;
+    }
+
+}
+
+/* ---------- EFFECTS ---------- */
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    font-size: 25px;
+    animation: floatUp 4s linear forwards;
+    pointer-events: none;
+    z-index: 99;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.confetti {
+    position: fixed;
+    width: 9px;
+    height: 14px;
+    top: -20px;
+    z-index: 100;
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+#strength {
+    font-weight: bold;
+    color: #c34d82;
+    min-height: 25px;
+}
+
+.small {
+    font-size: 13px;
+    opacity: .7;
+}
+
+.countdown {
+    font-size: 22px;
+    color: #c64c82;
+    font-weight: bold;
+    min-height: 32px;
+}
+
+@media(max-width:500px) {
+    .card {
+        padding: 24px 15px;
+    }
+
+    .cat-area {
+        transform: scale(.9);
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="screen">
+
+    <!-- INTRO -->
+    <div class="card" id="intro">
+
+        <div class="countdown" id="countdown">
+            Wifeyyy... 👀
+        </div>
+
+        <h1>WAITTTT 😭💗</h1>
+
+        <p>
+            I made something for you.<br>
+            But first...
+        </p>
+
+        <div class="cat-area">
+
+            <div class="cat">
+
+                <div class="ear left">
+                    <div class="inner-ear"></div>
+                </div>
+
+                <div class="ear right">
+                    <div class="inner-ear"></div>
+                </div>
+
+                <div class="eye left"></div>
+                <div class="eye right"></div>
+
+                <div class="nose"></div>
+                <div class="mouth"></div>
+
+                <div class="whisker w1"></div>
+                <div class="whisker w2"></div>
+                <div class="whisker w3"></div>
+                <div class="whisker w4"></div>
+
+            </div>
+
+            <div class="cake">
+
+                <div class="candle">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="cake-base">
+                    <div class="icing">
+                        <div class="drip"></div>
+                        <div class="drip"></div>
+                        <div class="drip"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <h2 id="instruction">
+            There's a tiny problem... 🐱
+        </h2>
+
+        <p id="subtext">
+            This little idiot has been waiting with a birthday cake. 😭
+        </p>
+
+        <button id="micButton" class="hidden">
+            🎤 Tap here to blow the candles
+        </button>
+
+        <button id="manualButton" class="hidden secondary">
+            💨 Just blow them out
+        </button>
+
+        <p id="strength"></p>
+
+        <p class="small">
+            Don't worry, your microphone is only used for detecting the blow.
+        </p>
+
+    </div>
+
+
+    <!-- FINAL MESSAGE -->
+    <div class="card" id="message">
+
+        <div style="font-size:55px;">
+            🎂💗😭
+        </div>
+
+        <h1>HAPPY 18TH<br>WIFEYYYYYY!!!</h1>
+
+        <div class="message-box">
+
+            <p>
+                OIIII <span class="highlight">WIFEYYYYY</span> 😭💗
+            </p>
+
+            <p>
+                You actually made it to <b>18</b>.
+                WELCOME TO ADULTHOOD. 😂
+            </p>
+
+            <p>
+                Okay, jokes apart...
+            </p>
+
+            <p>
+                It's actually crazy to think that we've been friends
+                since <b>2024</b> — back in Class 11.
+            </p>
+
+            <p>
+                We literally watched each other's relationships
+                turn into ex-relationships, survived all that drama,
+                and somehow came out of it still standing beside each other. 😭
+            </p>
+
+            <p>
+                And the funniest part?
+                <b>YOU</b> were the one who introduced me to that boy. 😭
+            </p>
+
+            <p>
+                Well...
+            </p>
+
+            <p class="big-love">
+                THEY LEFT.<br>
+                BUT WE STAYED. 🥹❤️
+            </p>
+
+            <p>
+                And look at us now...
+            </p>
+
+            <p>
+                What started as a friendship in Class 11 somehow became
+                one of those bonds where I genuinely can't imagine my
+                life without you being a part of it.
+            </p>
+
+            <p>
+                It's almost been two years, and somehow you became
+                so much more than just a friend.
+            </p>
+
+            <p>
+                You're my <b>other half</b>, my wifey, my person,
+                and one of the people I know I can count on. 🫂
+            </p>
+
+            <p>
+                We've already collected so many memories,
+                so many stupid conversations, so much laughter,
+                so much drama, and probably enough embarrassing
+                stories to ruin each other's lives. 😭
+            </p>
+
+            <p>
+                But honestly...
+            </p>
+
+            <p>
+                I hope this isn't even close to the end of our story.
+            </p>
+
+            <p>
+                I hope there are <b>MANY, MANY MORE YEARS</b>
+                of us being this stupid together.
+            </p>
+
+            <p>
+                I hope no matter where life takes us,
+                we always find our way back to each other.
+            </p>
+
+            <p>
+                And I really, really hope you never leave my side. 🥹
+            </p>
+
+            <p>
+                Because somewhere along the way,
+                you stopped being just my best friend...
+            </p>
+
+            <p class="big-love">
+                YOU BECAME FAMILY. ❤️
+            </p>
+
+            <p>
+                I love you so, so much, Wifeyyyy. ❤️
+            </p>
+
+            <p>
+                Happy 18th, Debasmita. 🎂💗
+            </p>
+
+            <p style="text-align:center;">
+                Here's to us, and all the years we still have left
+                to annoy the hell out of each other. 😭🫶🏻
+            </p>
+
+        </div>
+
+        <div class="photo-section">
+
+            <h2>📸 OUR CHAOS ARCHIVE</h2>
+
+            <div class="photo-placeholder">
+
+    <h3>💗 Our Memories 💗</h3>
+
+    <div class="photo-grid">
+
+        <img src="Photo1.jpeg" alt="Our memory 1">
+        <img src="Photo2.jpeg" alt="Our memory 2">
+        <img src="Photo3.jpeg" alt="Our memory 3">
+        <img src="Photo4.jpeg" alt="Our memory 4">
+
+    </div>
+
+    <p class="small">
+        Two idiots, one friendship, countless memories. 🥹🫶🏻
+    </p>
+
+</div>
+        <div style="margin-top:25px; font-size:35px;">
+            🐱🎂💗🫶🏻✨😭
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+let candlesOut = false;
+let audioContext;
+let analyser;
+let microphone;
+let listening = false;
+
+
+/* ---------- START PAGE ---------- */
+
+setTimeout(() => {
+
+    document.getElementById("countdown").innerHTML =
+        "Okay... make a wish first. 🎂✨";
+
+    document.getElementById("instruction").innerHTML =
+        "Your birthday cake is waiting... 👀";
+
+    document.getElementById("subtext").innerHTML =
+        "You know what you have to do now. 😭";
+
+    document.getElementById("micButton").classList.remove("hidden");
+    document.getElementById("manualButton").classList.remove("hidden");
+
+}, 3000);
+
+
+/* ---------- MICROPHONE ---------- */
+
+document.getElementById("micButton").addEventListener("click", async () => {
+
+    if (listening) return;
+
+    try {
+
+        const stream =
+            await navigator.mediaDevices.getUserMedia({ audio: true });
+
+        audioContext =
+            new (window.AudioContext || window.webkitAudioContext)();
+
+        analyser = audioContext.createAnalyser();
+
+        analyser.fftSize = 512;
+
+        microphone =
+            audioContext.createMediaStreamSource(stream);
+
+        microphone.connect(analyser);
+
+        listening = true;
+
+        document.getElementById("instruction").innerHTML =
+            "🎤 NOW BLOWWWWW 💨💨💨";
+
+        document.getElementById("subtext").innerHTML =
+            "Give your screen the biggest birthday blow you can. 😂";
+
+        detectBlow();
+
+    } catch(error) {
+
+        document.getElementById("strength").innerHTML =
+            "Microphone permission was blocked 😭 Use the button below instead.";
+
+    }
+
+});
+
+
+function detectBlow() {
+
+    if (!listening || candlesOut) return;
+
+    const data =
+        new Uint8Array(analyser.frequencyBinCount);
+
+    analyser.getByteFrequencyData(data);
+
+    let total = 0;
+
+    for(let i = 0; i < data.length; i++) {
+        total += data[i];
+    }
+
+    const average =
+        total / data.length;
+
+    document.getElementById("strength").innerHTML =
+        "Blow strength: " + Math.round(average);
+
+    /*
+       The threshold is intentionally not extremely high.
+       A strong blow should normally cross it.
+    */
+
+    if(average > 42) {
+
+        blowCandles();
+
+        return;
+    }
+
+    requestAnimationFrame(detectBlow);
+}
+
+
+/* ---------- MANUAL BACKUP ---------- */
+
+document.getElementById("manualButton").addEventListener("click", () => {
+
+    blowCandles();
+
+});
+
+
+/* ---------- CANDLE EFFECT ---------- */
+
+function blowCandles() {
+
+    if(candlesOut) return;
+
+    candlesOut = true;
+    listening = false;
+
+    document.querySelectorAll(".flame").forEach(flame => {
+
+        flame.style.animation = "none";
+
+        flame.style.transition =
+            "all .4s ease";
+
+        flame.style.transform =
+            "scale(0) translateY(-20px)";
+
+        flame.style.opacity = "0";
+
+    });
+
+    document.getElementById("instruction").innerHTML =
+        "✨ WISH MADE ✨";
+
+    document.getElementById("subtext").innerHTML =
+        "THE CANDLES ARE OUT!!! 🎉😭💗";
+
+    document.getElementById("strength").innerHTML =
+        "18 looks good on you already. 😭";
+
+    createConfetti();
+    createHearts();
+
+    if(audioContext) {
+
+        try {
+            audioContext.close();
+        } catch(e) {}
+
+    }
+
+    setTimeout(() => {
+
+        document.getElementById("intro").style.display = "none";
+
+        document.getElementById("message").style.display = "block";
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    }, 1800);
+
+}
+
+
+/* ---------- CONFETTI ---------- */
+
+function createConfetti() {
+
+    const symbols = ["🎉","✨","💗","💖","🌸","⭐","🎊"];
+
+    for(let i = 0; i < 80; i++) {
+
+        const piece =
+            document.createElement("div");
+
+        piece.className = "confetti";
+
+        piece.innerText =
+            symbols[Math.floor(Math.random() * symbols.length)];
+
+        piece.style.left =
+            Math.random() * 100 + "vw";
+
+        piece.style.animationDuration =
+            (2 + Math.random() * 3) + "s";
+
+        piece.style.fontSize =
+            (10 + Math.random() * 15) + "px";
+
+        document.body.appendChild(piece);
+
+        setTimeout(() => {
+
+            piece.remove();
+
+        }, 5000);
+
+    }
+
+}
+
+
+/* ---------- FLOATING HEARTS ---------- */
+
+function createHearts() {
+
+    setInterval(() => {
+
+        const heart =
+            document.createElement("div");
+
+        heart.className = "heart";
+
+        heart.innerText =
+            ["💗","💖","💕","💓","🫶🏻"][Math.floor(Math.random()*5)];
+
+        heart.style.left =
+            Math.random() * 100 + "vw";
+
+        heart.style.animationDuration =
+            (3 + Math.random() * 3) + "s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+
+            heart.remove();
+
+        }, 6000);
+
+    }, 350);
+
+}
+
+</script>
+
+</body>
+</html>
