@@ -441,7 +441,9 @@ button:active {
 </head>
 
 <body>
-
+<audio id="birthdayMusic" loop>
+    <source src="birthday.mp3" type="audio/mpeg">
+</audio>
 <div class="screen">
 
     <!-- INTRO -->
@@ -731,7 +733,8 @@ setTimeout(() => {
 
 document.getElementById("micButton").addEventListener("click", async () => {
 
-    if (listening) return;
+   document.getElementById("birthdayMusic").play();
+if (listening) return;
 
     try {
 
